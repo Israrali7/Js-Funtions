@@ -8,36 +8,71 @@
 <body>
     <h1>     JS FUNCTIONS    </h1>
     <script>
-        // function date(){
-        //     var now = new Date()
-        //     console.log(now);
-        // }
-        // date()
-
-
-        // function greet(a , b){
-        //     console.log("Asalam-u-Alaikum"+ a + b);
-        // }
-        // greet(' Israr' , 'Ali')
-
-
-        // function add(x , y){
-        //     var sum = a + b
-        //     console.log(sum);
-        // }
-        // add(+prompt("Enter Your First number") , +prompt("Enter Your second number"))
-
-        function Calculator( num1 , num2 , operator){
-            var cal = `${num1}${operator}${num2}`
-            console.log(cal);
+        // DATE
+            function date(){
+                var now = new Date()
+                console.log(now);
+            }
+            date()
+    
+        // GREET
+            function greet(a , b){
+                console.log("Asalam-u-Alaikum"+ a + b);
+            }
+            greet(' Israr' , 'Ali')
+    
+        // SUM
+            function add(x , y){
+                var sum = a + b
+                console.log(sum);
+            }
+            add(+prompt("Enter Your First number") , +prompt("Enter Your second number"))
+    
+            // function Calculator( num1 , num2 , operator){
+            //     var cal = `${num1}${operator}${num2}`
+            //     console.log(cal);
+            // }
+            // Calculator(+prompt("Enter num1"),+prompt("Enter operator"),+prompt("Enter Num2"))
+    
+        // SQUARE
+            function square(a){
+                var sq = a*a
+                console.log(sq);
+            }
+            square(+prompt("Enter your num for Square"))
+    
+        // FACTORIAL
+    function factorial(n) {
+      if (n === 0) {
+        return 1;
+      } else {
+        return n * factorial(n - 1);
+      }
+      console.log(n);
+    }
+    factorial(5)
+                
+    // COUNTING
+     function Counting(start , end){
+        for (let i = start; i <= end ; i++){
+       console.log(i);
         }
-        Calculator(+prompt("Enter num1"),+prompt("Enter operator"),+prompt("Enter Num2"))
-
-
-
-
-
-
-    </script>
+     }
+    Counting(+prompt('Enter Where You Wanna Start Counting'),+prompt('Enter Where You Wanna End counting'))
+    
+    // HYPOTENOUS
+    function Hypotenous(a , b){
+        var perp = a
+        var base = b 
+        var hyp = (a*a) + (b*b)
+        var ans = hyp * hyp
+        console.log(ans);
+        return ans
+    }
+    Hypotenous(+prompt("Enter your Triangle`s Perpendicular"),+prompt("Enter your Triangle`s Base"))
+    
+    
+    
+        </script>
 </body>
 </html>
